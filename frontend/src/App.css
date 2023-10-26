@@ -1,0 +1,175 @@
+a {
+  text-decoration: none;
+}
+
+body { 
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif; 
+}
+@supports (font-variation-settings: normal) {
+  body { 
+    font-family: 'Inter var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif; 
+    font-feature-settings: "cv03", "cv04", "cv11";
+  }
+}
+
+body {
+  background-color: #f1f5f9 !important;
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4285714286;
+  color: #1d273b;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.page-header {
+  margin: 1.25rem 0 0;
+}
+.page-pretitle {
+  font-size: .625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1rem;
+  color: #616876;
+}
+.page-title {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+table thead th {
+  background: #f8fafc;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1rem;
+  color: #616876;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  white-space: nowrap;
+}
+.td-truncate {
+  width: 1px;
+}
+.mantine-InputWrapper-label {
+  padding-bottom: 5px;
+}
+/* Component CSS */
+.student-list-table th {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500 !important;
+  font-size: 0.875rem;
+  color: #000 !important;
+}
+.student-list-table th:first-of-type {
+  width: 5%;
+}
+
+/* Full Calendar */
+.fc {
+  margin-right: -1px;
+}
+.fc table {
+  font-size: 0.875rem;
+}
+.fc-list-day-cushion {
+  font-weight: 500;
+}
+.fc .fc-scrollgrid-liquid {
+  border: 0 none;
+}
+.fc .fc-header-toolbar {
+  background-color: #fff;
+  padding: 10px 10px 11px;
+  border: 0.0625rem solid #dee2e6;
+  margin: 0!important;
+  border-bottom: 0;
+}
+.fc .fc-toolbar-title {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 600;
+}
+.fc .fc-view-harness {
+  background-color: #ffffff;
+  min-height: 476px;
+}
+.fc-col-header-cell {
+  font-size: .625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1rem;
+  color: #667382;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  white-space: nowrap;
+}
+.fc .fc-daygrid-day-frame {
+  min-height: 75px;
+  height: 100%;
+}
+.fc-scrollgrid-sync-inner {
+  overflow: hidden;
+}
+.fc .fc-daygrid-day-number {
+  padding-bottom: 0;
+}
+.fc .fc-button-primary {
+  box-shadow: none !important;
+  padding: 0px 0.5rem;
+  height: 1.625rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 0.875rem;
+  border: 0.0625rem solid #fff;
+  background-color: rgb(231, 245, 255);
+  color: rgb(34, 139, 230);
+  transition: ease-in 0.2s;
+}
+.fc .fc-button-primary:hover {
+  border: 0.0625rem solid #fff;
+  background-color: rgb(231, 245, 255);
+  color: rgb(34, 139, 230);
+}
+.fc .fc-button-primary:not(:disabled):active {
+  background-color:#15549a;
+  border: 0.0625rem solid #fff;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #206bc4;
+  border-color: #fff;
+}
+.fc .fc-button-primary:disabled {
+  background-color: #909296;
+  border-color: #fff;
+  color: #fff;
+}
+a.fc-event {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 3px 5px 1px;
+  color:#fff;
+  background-color: rgb(32 107 196);
+  border: 0 none;
+}
+a.fc-event:hover {
+  background-color: #15549a;
+}
+
+.message ol, .message ul {
+  list-style: disc;
+  margin: 1rem 0;
+  padding: 0 0 0 2rem;
+}
+
+.qr-scanner > div > svg {
+  display: none;
+}
