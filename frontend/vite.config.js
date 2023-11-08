@@ -5,7 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 const manifestForPlugin = {
 	registerType: "prompt",
-	includeAssets: ["favicon.png", "logo.png"],
+	includeAssets: ["favicon.png", "logo.svg"],
 	manifest: {
 		name: "Teamup",
 		short_name: "Teamup",
