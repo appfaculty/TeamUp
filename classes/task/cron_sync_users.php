@@ -147,5 +147,9 @@ class cron_sync_users extends \core\task\scheduled_task {
         $this->log_finish(">------------ END TEAMUP cron_sync_users ------------>");
         $this->log_finish("\n");
     }
+
+    public function can_run(): bool {
+        return true;
+    }
         
 }

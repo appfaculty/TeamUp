@@ -63,5 +63,8 @@ class cron_send_messages extends \core\task\scheduled_task {
         $this->log_finish(">------------ END TEAMUP cron_send_messages ------------>");
         $this->log_finish("\n");
     }
-        
+
+    public function can_run(): bool {
+        return true;
+    }
 }

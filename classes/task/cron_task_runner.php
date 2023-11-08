@@ -66,5 +66,9 @@ class cron_task_runner extends \core\task\scheduled_task {
         $this->log_finish(">------------ END TEAMUP cron_task_runner ------------>");
         $this->log_finish("\n");
     }
+
+    public function can_run(): bool {
+        return true;
+    }
         
 }

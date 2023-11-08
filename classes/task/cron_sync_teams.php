@@ -163,4 +163,8 @@ class cron_sync_teams extends \core\task\scheduled_task {
         $this->log_finish(">------------ END TEAMUP cron_sync_teams ------------>");
         $this->log_finish("\n");
     }
+
+    public function can_run(): bool {
+        return true;
+    }
 }

@@ -115,4 +115,8 @@ class cron_sync_categories extends \core\task\scheduled_task {
         $this->log_finish(">------------ END TEAMUP cron_sync_categories ------------>");
         $this->log_finish("\n");
     }
+
+    public function can_run(): bool {
+        return true;
+    }
 }
