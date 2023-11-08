@@ -1,6 +1,50 @@
 import { defineConfig, splitVendorChunkPlugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import liveReload from 'vite-plugin-live-reload'
+import { VitePWA } from "vite-plugin-pwa";
+
+const manifestForPlugin = {
+	registerType: "prompt",
+	includeAssets: ["favicon.png", "logo.png"],
+	manifest: {
+		name: "Teamup",
+		short_name: "Teamup",
+		description: "Sports management.",
+    // Generated assets and the following code via npx pwx-asset-generator command in npm run build"
+    icons: [
+      {
+        "src": "assets/pwa/manifest-icon-192.maskable.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "assets/pwa/manifest-icon-192.maskable.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "assets/pwa/manifest-icon-512.maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "assets/pwa/manifest-icon-512.maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+		theme_color: "#0F172A",
+		background_color: "#f1f5f9",
+		display: "standalone",
+		scope: "/local/teamup/",
+		start_url: "/local/teamup/",
+		orientation: "portrait",
+	},
+};
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,6 +55,7 @@ export default defineConfig({
       __dirname + '../../*.php',
     ]),
     splitVendorChunkPlugin(),
+    VitePWA(manifestForPlugin), // PWA
   ],
   base: process.env.APP_ENV === 'development'
   ? '/local/teamup/frontend/'
