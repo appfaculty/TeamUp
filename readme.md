@@ -1,5 +1,5 @@
 # TeamUp
-**[appfaculty.com/teamup](https://appfaculty.com/teamup)**
+**[AppFaculty.com/teamup](https://appfaculty.com/teamup)**
 
 ![TeamUp Logo](https://github.com/appfaculty/TeamUp/blob/main/images/logo.png?raw=true)
 
